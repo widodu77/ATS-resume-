@@ -1,3 +1,12 @@
+"""
+THIS IS THE MAIN LOGIC BEHIND THE SCORE GIVING ALGO, I HAD TO KINDA ALTER IT FOR IT TO WORK IN THE WEBSITE'S BACKEND (btw this can wrk on its own with streamlit)
+"""
+
+
+
+
+
+
 from copy import deepcopy
 from typing import Dict, TypedDict, Optional
 from langgraph.graph import StateGraph, END
