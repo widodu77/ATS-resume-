@@ -1,0 +1,37 @@
+<!-- resume/templates/resume/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Score</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'resume/css/style.css' %}">
+</head>
+<body>
+    <h1>Your Resume Score</h1>
+    <p><strong>Final Verdict:</strong> {{ result.final_verdict }}</p>
+
+    <h2>Detailed Feedback</h2>
+    {% if result.history %}
+        {% for category, details in result.history.items %}
+            <div class="feedback-category">
+                <h3>{{ category }}</h3>
+                {% if details.Overall %}
+                    <p><strong>Overall:</strong> {{ details.Overall }}</p>
+                {% endif %}
+                <ul>
+                    {% for facet, feedback in details.items %}
+                        {% if facet != "Overall" %}
+                            <li><strong>{{ facet }}:</strong> {{ feedback }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No detailed feedback available.</p>
+    {% endif %}
+
+    <a href="{% url 'resume:home' %}">Try another resume</a>
+</body>
+</html>
