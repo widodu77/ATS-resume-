@@ -1,0 +1,7 @@
+Django>=4.2
+gunicorn
+streamlit
+PyPDF2
+google-generativeai
+langchain-google-genai
+langgraph
