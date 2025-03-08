@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-import environ 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,28 +19,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-env = environ.Env(DEBUG=(bool, False))
-environ.Env.read_env() 
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("SECRET_KEY")
-#"django-insecure--wkvh!wz^e7f1iajvqzk9kc7iplds9d&0va-0x-^o%ctc7aren"
+SECRET_KEY = "django-insecure-$r6k0f+)m01#5jm=ndtnugp_h2h8h-4sa_y1y0p+p%qx362vz1"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env("DEBUG")
-#False 
+DEBUG = True
 
-ALLOWED_HOSTS = ["35.180.54.113"]
+ALLOWED_HOSTS = []
 
-GEMINI_API_KEY = env('GEMINI_API_KEY')
-#"AIzaSyC1PPXH8WA4ZZ-ZA1lNOPy35V9WYGHcans"
 
 # Application definition
 
 INSTALLED_APPS = [
-    "corsheaders",
-    "rest_framework",
-    "resume",
+    "polls.apps.PollsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -50,10 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
-
-
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -62,9 +49,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-
-# For development only; allow your React app to access the API.
-CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = "mysite.urls"
 
