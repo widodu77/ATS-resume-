@@ -14,6 +14,10 @@ from django.conf import settings
 
 #promps need a bit of work lol 
 
+#update: just switch some of the promps, nexxt would be to remove and merge some, since each subagent is basically an additional api call, 
+#it takes hella time and compute to get the final result, so might be a great idea to merge the prompts, i believe it would also kill some of 
+#the repition that would happen in the final product 
+
 prompt_clean = "Remove special characters, unnecessary text from this resume. Resume : {} "
 
 subagent_desc = {
