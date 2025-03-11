@@ -20,35 +20,34 @@ from django.conf import settings
 
 prompt_clean = "Remove special characters, unnecessary text from this resume. Resume : {} "
 
-subagent_desc = {
-    "Impact": {
-        "Quantify impact": "Use specific numbers, percentages, or metrics to demonstrate the scale and significance of your achievements.",
-        "Repetition": "Maintain consistent language and terminology, but avoid repeating the same phrases or descriptions across multiple sections.",
-        "Weak verbs": "Use strong, action-oriented verbs to effectively convey your contributions and responsibilities.",
-        "Verb tenses": "Use present tense for current roles and past tense for previous roles, maintaining consistency throughout.",
-        "Responsibilities": "Focus on key duties and tasks tailored to the job you're applying for, rather than generic job descriptions.",
-        "Spelling & consistency": "Ensure your resume is free of errors and maintains consistent formatting, capitalization, and punctuation."
-    },
-    "Brevity": {
-        "Length": "Keep your resume concise, typically one page, up to two pages for extensive experience.",
-        "Bullet Lengths": "Maintain concise bullet points, typically 1-2 lines, to highlight the most important information.",
-        "Filler Words": "Minimize the use of filler words to maximize the impact and conciseness of your resume."
-    },
-    "Style": {
-        "Buzzwords": "Ensure your resume includes relevant industry-specific keywords and buzzwords that match the job description.",
-        "Dates": "Format your employment dates consistently (e.g. MM/YYYY) and ensure there are no unexplained gaps in your work history.",
-        "Contact and Personal Details": "Make sure your name, contact information, and other personal details are clearly displayed and up-to-date.",
-        "Readability": "Use a clean, simple layout and font that is easy for the ATS to parse. Avoid complex formatting, tables, and graphics.",
-        "Personal Pronouns": "Minimize the use of personal pronouns like 'I', 'me', and 'my' to keep the focus on your achievements and skills.",
-        "Active Voice": "Use active voice to describe your responsibilities and accomplishments, making your resume more impactful.",
-        "Consistency": "Maintain consistent formatting, language, and style throughout your resume to present a professional and polished document."
-    },
-    "Sections": {
-        "Summary": "A concise overview of your key qualifications, experience, and career goals.",
-        "Education": "Details about your academic background, including degrees, schools, and relevant coursework or achievements.",
-        "Unnecessary Sections": "Sections that may not be relevant or add value to your resume, such as hobbies, interests, or irrelevant work experience.",
-        "Skills": "A list of your relevant technical, soft, and transferable skills that demonstrate your capabilities."
-    }
+subagent_desc = {"Impact": {
+"Quantify impact, Repetition, weak verbs": "Use specific numbers, percentages, or metrics to demonstrate the scale and significance of your achievements;"
+"Maintain consistent language and terminology, but avoid repeating the same phrases or descriptions across multiple sections; "
+"Use strong, action-oriented verbs to effectively convey your contributions and responsibilities.",
+"Verb tenses, Responsibilities, Spelling & consistency": "Use present tense for current roles and past tense for previous roles, maintaining consistency throughout;"
+"Focus on key duties and tasks tailored to the job you're applying for, rather than generic job descriptions;"
+"Ensure your resume is free of errors and maintains consistent formatting, capitalization, and punctuation."
+},
+"Brevity":{
+"Length": "Keep your resume concise, typically one page, up to two pages for extensive experience.",
+"Bullet Lengths, Filler Words": "Maintain concise bullet points, typically 1-2 lines, to highlight the most important information;"
+"Minimize the use of filler words to maximize the impact and conciseness of your resume"
+},
+"Style": {
+    "Buzzwords, Dates, Contact and Personal Details": "Ensure your resume includes relevant industry-specific keywords and buzzwords that match the job description;"
+    "Format your employment dates consistently (e.g. MM/YYYY) and ensure there are no unexplained gaps in your work history"
+    "Make sure your name, contact information, and other personal details are clearly displayed and up-to-date",
+    "Readability, Personal Pronouns, Active Voice, Consistency": "Use a clean, simple layout and font that is easy for the ATS to parse. Avoid complex formatting, tables, and graphics."
+    "Minimize the use of personal pronouns like 'I', 'me', and 'my' to keep the focus on your achievements and skills"
+    "Use active voice to describe your responsibilities and accomplishments, making your resume more impactful."
+    "Maintain consistent formatting, language, and style throughout your resume to present a professional and polished document",
+},
+"Sections": {
+    "Education, Skills": "Details about your academic background, including degrees, schools, and relevant coursework or achievements;"
+    "A list of your relevant technical, soft, and transferable skills that demonstrate your capabilities.",
+    "Unnecessary Sections": "Sections that may not be relevant or add value to your resume, such as hobbies, interests, or irrelevant work experience.",
+    
+}
 }
 
 agent_desc = {
