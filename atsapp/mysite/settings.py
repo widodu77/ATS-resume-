@@ -36,7 +36,9 @@ SECRET_KEY = env("SECRET_KEY")
 DEBUG = True 
 #False
 #env("DEBUG")
- 
+
+CSRF_TRUSTED_ORIGINS = ['http://13.39.135.220']
+
 
 ALLOWED_HOSTS = ["13.39.135.220","localhost"]
 
