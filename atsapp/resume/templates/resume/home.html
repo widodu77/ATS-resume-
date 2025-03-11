@@ -2,18 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Upload Your Resume</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" >
-    
+  <meta charset="UTF-8">
+  <title>Upload Your Resume</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+  <div class="container">
     <h1>ATS Resume Scorer</h1>
     <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Score My Resume</button>
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Score My Resume</button>
     </form>
+  </div>
 </body>
 </html>
+
