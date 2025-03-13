@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <!-- Shared CSS for all pages -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Page-specific CSS can be added in the extra_css block -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
