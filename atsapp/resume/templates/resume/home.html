@@ -1,21 +1,14 @@
-<!-- resume/templates/resume/home.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Upload Your Resume</title>
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-  <div class="container">
+{% extends "resume/base.html" %}
+
+{% block title %}Upload Your Resume{% endblock %}
+
+{% block content %}
+<div class="container">
     <h1>ATS Resume Scorer</h1>
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {{ form.as_p }}
       <button type="submit">Score My Resume</button>
     </form>
-  </div>
-</body>
-</html>
-
+</div>
+{% endblock %}
