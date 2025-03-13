@@ -1,67 +1,68 @@
-/* style.css */
-
+/* static/css/style.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 600px;
     margin: 50px auto;
     background: #ffffff;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
-    color: #333333;
+    color: #333;
     margin-bottom: 20px;
-  }
-  
-  form {
+}
+
+form {
     margin-top: 20px;
-  }
-  
-  form p {
+}
+
+form p {
     margin-bottom: 15px;
-  }
-  
-  form label {
+}
+
+form label {
     display: block;
     margin-bottom: 5px;
-    color: #555555;
+    color: #555;
     font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="file"],
-  form textarea {
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  button {
+}
+
+button {
     display: block;
     width: 100%;
     padding: 10px;
     border: none;
     background-color: #007BFF;
-    color: #ffffff;
+    color: #fff;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
+}
+
   }
   
