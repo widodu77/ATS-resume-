@@ -8,6 +8,6 @@ I am currently in the process of launching it as a website, just looking into ho
 
 for now this is how it works, we got the main directory on the ubuntu (after setting up the vm of course), then routed the django file to gunicorn, and then gunicorn to nginx
 
-http://13.39.135.220 here is the public ip go check it out pls (please only input a pdf file or it's gonna be sad)
+http://13.39.135.220 here is the public ip go check it out pls, still have to add a domain name, but don't really want to pay for one haha (please only input a pdf file or it's gonna be sad)
 
 finally added style, was a bit of a hastle with the nginx routing but it ended up working
