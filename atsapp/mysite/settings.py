@@ -30,7 +30,7 @@ environ.Env.read_env()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
-#"django-insecure--wkvh!wz^e7f1iajvqzk9kc7iplds9d&0va-0x-^o%ctc7aren"
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True 
@@ -43,7 +43,7 @@ CSRF_TRUSTED_ORIGINS = ['http://13.39.135.220']
 ALLOWED_HOSTS = ["13.39.135.220","localhost"]
 
 GEMINI_API_KEY = env('GEMINI_API_KEY')
-#"AIzaSyC1PPXH8WA4ZZ-ZA1lNOPy35V9WYGHcans"
+
 
 # Application definition
 
